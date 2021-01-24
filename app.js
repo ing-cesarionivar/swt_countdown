@@ -26,10 +26,10 @@ function timer(date) {
         minutes = String(minutes);
         seconds = String(seconds);
 
-        daysEl.innerHTML = `${parseInt(days)} <br><span>Días</span>`;
-        hoursEl.innerHTML = `${parseInt(hours)}<br><span>Horas</span>`;
-        minutesEl.innerHTML = `${parseInt(minutes)}<br><span>Minutos</span>`;
-        secondsEl.innerHTML = `${parseInt(seconds)}<br><span>Segundos</span>`;
+        daysEl.innerHTML = `${days} <br><span>Días</span>`;
+        hoursEl.innerHTML = `${hours}<br><span>Horas</span>`;
+        minutesEl.innerHTML = `${minutes}<br><span>Minutos</span>`;
+        secondsEl.innerHTML = `${seconds}<br><span>Segundos</span>`;
         
         if (difference < 0) {
             clearInterval(timer);
