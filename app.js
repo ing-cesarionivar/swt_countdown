@@ -21,15 +21,10 @@ function timer(date) {
         let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((difference % (1000 * 60)) / (1000));
 
-        days = String(days);
-        hours = String(hours);
-        minutes = String(minutes);
-        seconds = String(seconds);
-
-        daysEl.innerHTML = `${days} <br><span>Días</span>`;
-        hoursEl.innerHTML = `${hours}<br><span>Horas</span>`;
-        minutesEl.innerHTML = `${minutes}<br><span>Minutos</span>`;
-        secondsEl.innerHTML = `${seconds}<br><span>Segundos</span>`;
+        daysEl.innerHTML = `${days} <br><span>${days === 1 ? 'Day' : 'Days'}</span>`;
+        hoursEl.innerHTML = `${hours}<br><span>${hours === 1 ? 'Hour' : 'Hours'}</span>`;
+        minutesEl.innerHTML = `${minutes}<br><span>${minutes === 1 ? 'Minute' : 'Minutes'}</span>`;
+        secondsEl.innerHTML = `${seconds}<br><span>${seconds === 1 ? 'Second' : 'Seconds'}</span>`;
         
         if (difference < 0) {
             clearInterval(timer);
