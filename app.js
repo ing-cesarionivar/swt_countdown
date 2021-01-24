@@ -21,10 +21,10 @@ function timer(date) {
         const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((difference % (1000 * 60)) / (1000));
 
-        daysEl.innerHTML = `${Number(days)} <br><span>Días</span>`;
-        hoursEl.innerHTML = `${Number(hours)}<br><span>Horas</span>`;
-        minutesEl.innerHTML = `${Number(minutes)}<br><span>Minutos</span>`;
-        secondsEl.innerHTML = `${Number(seconds)}<br><span>Segundos</span>`;
+        daysEl.innerHTML = `${98} <br><span>Días</span>`;
+        hoursEl.innerHTML = `${20}<br><span>Horas</span>`;
+        minutesEl.innerHTML = `${33}<br><span>Minutos</span>`;
+        secondsEl.innerHTML = `${35}<br><span>Segundos</span>`;
 
         if (difference < 0) {
             clearInterval(timer);
