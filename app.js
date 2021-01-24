@@ -9,7 +9,7 @@ function timer(date) {
 
     setInterval(() => {
 
-        const countdown = new Date(date).getTime();
+        const countdown = new Date(date.toString().replace(/\,/g, '/')).getTime();
 
         const now = new Date().getTime();
 
@@ -41,4 +41,4 @@ function timer(date) {
     }, 1000);
 }
 
-timer('2021/05/01 24:00:00');
+timer('2021-05-01 24:00:00');
